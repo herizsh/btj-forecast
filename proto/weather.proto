@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "forecast/pb2";
+package weather;
+
+service WeatherService {
+  rpc StreamForecasts (ForecastRequest) returns (stream ForecastResponse);
+}
+
+message ForecastRequest {
+  string city = 1;
+  int32 days = 2;
+}
+
+message ForecastResponse {
+  string date = 1;
+  string summary = 2; // Cloudy, Rain, etc
+  float temperatureCelsius = 3;
+}
