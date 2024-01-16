@@ -35,4 +35,4 @@ Your task is to develop a simplified push notification system using gRPC. The sy
 
 #### Deliverables
 - Source code for both the Go server and the Python client.
-- A README file documenting how to set up and run the server and client.# btj-forecast
+- A README file documenting how to set up and run the server and client.
